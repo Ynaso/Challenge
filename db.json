@@ -1,0 +1,10 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Storm Trooper",
+        "price": 60.00,
+        "image": "stormtroop.jpg"
+      }
+    ]
+  }

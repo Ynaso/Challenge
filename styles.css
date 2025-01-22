@@ -1,0 +1,203 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+.press-start-2p-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", system-ui;
+    font-size: 35px;
+    justify-content: center;
+    background-color: #5300C8;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hearts {
+    color: red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    font-family: "Roboto", system-ui;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #5300C8;
+    padding: 35px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.first-footer-container {
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 13px;
+    text-align: center;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 2.5%;
+    width: 70%;
+}
+
+.product-cards title h2 {
+    text-align: center;
+    white-space: pre-line;
+}
+
+.card {
+    background-color: #5D04D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    min-width: 150px;
+    padding: 5px;
+    color: rgb(242, 231, 212);
+    margin-top: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card__image img {
+    width: 98%;
+}
+
+.card__description {
+    font-family: "Roboto", system-ui;
+    font-size: 10px;
+    align-self: start;
+    margin-bottom: 10px;
+}
+
+.card__price {
+    display: flex;
+    font-size: 15px;
+    font-family: "Roboto", system-ui;
+    font-weight: bold;
+    gap: 75px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons-containers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.FormContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    flex-direction: column;
+    width: 90%;
+}
+
+.FormContainer h2::before {
+    content: "AGREGAR ";
+    display: block;
+}
+
+.FormContainer__form {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.FormContainer__form input {
+    border-radius: 20px;
+    border: 2px solid #03318C;
+    padding: 10px;
+    color: #03318C;
+
+}
+
+.FormContainer__form input::placeholder {
+    color: #03318C;
+}
+
+.buttons button {
+    padding: 10px 40px;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+#boton-enviar {
+    background-color: #03318C;
+    color: white;
+    border: none;
+    border: 2px solid #03318C;
+}
+
+#boton-cancelar {
+    background-color: #FFFFFF;
+    color: #03318C;
+    border: 2px solid #03318C;
+}
+
+#boton-enviar:hover {
+    background-color: #021f5b;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#boton-cancelar:hover {
+    background-color: #e6e6e6;
+    color: #021f5b;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .product-cards {
+        width: 100%;
+    }
+
+    .FormContainer {
+        width: 100%;
+    }
+}
